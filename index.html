@@ -121,27 +121,24 @@
 
         .invitation {
             width: 100%;
+            height: auto;
             display: grid;
-            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-
-            margin: 1rem 0;
-            background-color: #d8d8d8;
-            overflow: hidden;
-            color: #282828;
-            position: relative;
+            grid-template-columns: 1fr 2fr;
+            margin: 1rem 0rem;
+            color: #c6c4c4;
         }
 
         .invitation .left {
             position: relative;
-            width: 80%;
+            width: 100%;
             height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: 2rem;
+            background-color: #0E130C;
             padding: 2rem;
-            font-size: 27px;
+            font-size: 23px;
             font-weight: bold;
             text-align: left;
             line-height: 1.5;
@@ -163,16 +160,16 @@
             bottom: 0%;
             left: 55%;
             transform: translate(-50%, -50%);
-            color: #ffffff;
+            color: #0E130C;
             text-align: left;
-            font-size: 22px;
-            font-weight: normal;
+            font-size: 25px;
+            font-weight: bold;
             line-height: 0.7;
         }
 
         .content .text {
             padding: 2rem;
-            background: goldenrod;
+            background: #83C442;
             font-size: 18px;
 
         }
@@ -180,7 +177,7 @@
         .content .text p {
             font-size: 20px;
             font-weight: bold;
-            color: #333333;
+            color: white;
         }
 
         .content .text p:last-child {
@@ -254,7 +251,7 @@
         }
 
         .downloads a:hover {
-            background-color: #4CAF50;
+            background-color: #ba8f6c;
             color: #f2f3f4;
         }
 
@@ -311,12 +308,16 @@
             .invitation {
                 display: flex;
                 flex-direction: column;
-                flex-wrap: wrap;
-                gap: 2rem;
+                margin: 2rem 0rem;
+            }
+
+            .invitation .left,
+            .invitation .right {
+                height: 400px;
             }
 
             .invitation .right p {
-                font-size: 12px;
+                font-size: 18px;
             }
 
             .banner {
@@ -363,15 +364,10 @@
             }
 
             .banner .description button {
-                border: 1px solid #282828;
-                border-radius: 25px;
-                background-color: transparent;
-                cursor: pointer;
-                color: #fff;
-                background-color: #282828;
+                width: 60%;
+                border: 2px solid #282828;
+                color: #282828;
                 font-size: 12px;
-                font-weight: bold;
-                transition: 300ms all ease-in-out;
             }
 
 
@@ -414,7 +410,18 @@
             align-items: center;
             gap: 1rem;
         }
+
+        .downloads svg {
+            width: 40px;
+            height: 40px;
+            border-radius: 25px;
+            background-color: #ba8f6c;
+            fill: #fff;
+            padding: .2rem;
+        }
     </style>
+
+
 </head>
 
 <body>
